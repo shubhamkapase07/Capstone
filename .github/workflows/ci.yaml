@@ -29,7 +29,23 @@ jobs:
 
       - name: run pipeline
         env:
-          CAPSTONE: ${{ secrets.CAPSTONE}}
+          CAPSTONE: ${{ secrets.CAPSTONE }}
         run: |
           dvc repro
+      - name: Run model tests
+        env:
+          CAPSTONE: ${{ secrets.CAPSTONE }}
+        run: |
+          python -m unittest tests/test_model.py
 
+      - name: Promote model to production
+        if: success()
+        env:
+          CAPSTONE: ${{ secrets.CAPSTONE }}
+        run: python scripts/promote_model.py
+
+      - name: Run Flask app tests
+        if: success()
+        env:
+          CAPSTONE: ${{ secrets.CAPSTONE }}
+        run: python -m unittest tests/test_flask_app.py
