@@ -1,0 +1,9 @@
+[ 2026-11-14 17:33:40,303 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-11-14 17:33:40,319 ] dagshub - INFO - Accessing as shubhamkapase07
+[ 2026-11-14 17:33:44,098 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubhamkapase07/Capstone "HTTP/1.1 200 OK"
+[ 2026-11-14 17:33:47,030 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-11-14 17:33:47,031 ] dagshub - INFO - Initialized MLflow to track repo "shubhamkapase07/Capstone"
+[ 2026-11-14 17:33:47,031 ] dagshub - INFO - Repository shubhamkapase07/Capstone initialized!
+[ 2026-11-14 17:33:47,033 ] root - INFO - Model info loaded from reports/experiment_info.json
+[ 2026-11-14 17:33:47,033 ] root - ERROR - Error during model registration: model_uri not found in experiment_info.json. Run model_evaluation.py first.
+[ 2026-11-14 17:33:47,033 ] root - ERROR - Failed to complete the model registration process: model_uri not found in experiment_info.json. Run model_evaluation.py first.

@@ -1,0 +1,8 @@
+[ 2026-11-14 17:47:14,064 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-11-14 17:47:14,076 ] dagshub - INFO - Accessing as shubhamkapase07
+[ 2026-11-14 17:47:14,915 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/shubhamkapase07/Capstone "HTTP/1.1 200 OK"
+[ 2026-11-14 17:47:15,806 ] httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-11-14 17:47:15,809 ] dagshub - INFO - Initialized MLflow to track repo "shubhamkapase07/Capstone"
+[ 2026-11-14 17:47:15,810 ] dagshub - INFO - Repository shubhamkapase07/Capstone initialized!
+[ 2026-11-14 17:47:15,811 ] root - INFO - Model info loaded from reports/experiment_info.json
+[ 2026-11-14 17:47:20,405 ] root - INFO - Model my_model version 2 registered and transitioned to Staging.
